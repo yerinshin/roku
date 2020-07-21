@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wordcount</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Indie+Flower|Sunflower:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+    .center{
+        position: absolute; 
+        top: 15%;
+        left:45%;margin-left:-100px;
+    }
+    h2{
+        font-family: 'Fredoka One', cursive;
+    }
+    </style>
+</head>
+<body>
+    <div class="container center">
+        <h2>Inputted Sentence</h2>
+        {{fulltext}}
+        <h2>Num Of Words</h2>
+        {{total}}
+        <h2>How many words?</h2>
+        {% for key, value in dict %} <!--진자-->
+            {{key}} : {{value}}
+            <br>
+        {% endfor %}
+        <br>
+    </div>
+</body>
+</html>
